@@ -42,12 +42,23 @@ You will receive a JSON object with this structure:
     "uncertainties": [...],
     "source_evidence": [...]
   },
-  "candidates": [
-    {"domain": "...", "contact_personnel": "...", "mission_statement": "...", "details": "..."},
-    ...
-  ]
 }
 
+[
+  {
+    "company": "...",
+    "contact_personnel": [
+      {
+        "name": "...",
+        "role": "...",
+        "email": "...",
+        "phone": "..."
+      }
+    ],
+    "mission_statement": "...",
+    "business_type": "..."
+  }
+]
 OUTPUT FORMAT
 Respond with valid JSON only — no markdown code fences, no commentary before or after.
 Return an array called "matches", ordered from strongest to weakest fit. For each match, include a concise 2-3 sentence justification that names the specific service and the specific need it addresses, as well as a "match strength" (0-100) that notates how good of a fit the company is.

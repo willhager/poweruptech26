@@ -9,7 +9,7 @@ EMAIL_ADDRESS = "tchbuffalo@gmail.com"
 EMAIL_PASSWORD = "fecd imcl zhfy qqwf"
 
 
-OUTPUT_DIR = r"IncomingEmails"
+OUTPUT_DIR = r"./IncomingEmails"
 
 def decode_email_header(value):
     if not value:
