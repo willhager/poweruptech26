@@ -1,4 +1,4 @@
-from poweruptech26.poweruptech26.agent3.utils import system_prompt
+from utils import system_prompt
 
 import anthropic
 

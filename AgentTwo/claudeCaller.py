@@ -1,4 +1,4 @@
-from agent2.utils import system_prompt
+from utils import system_prompt
 
 import anthropic
 

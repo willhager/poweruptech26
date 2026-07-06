@@ -18,8 +18,6 @@ For every candidate company, reason step by step before deciding:
 
 Only select a company if you can articulate a specific, plausible reason tied to what that company actually does — not a generic B2B justification that could apply to almost any business.
 
-TOOLS
-You have access to a web search/fetch tool. Use it to research unfamiliar companies and confirm what they do before making a judgment — do not rely solely on guessing from the domain name.
 
 INPUT FORMAT
 You will receive a JSON object with this structure:
@@ -67,5 +65,5 @@ Return an array called "matches", ordered from strongest to weakest fit. For eac
 
 If no candidates are a plausible fit, return: {"matches": []}
 
-DATA: 
+INPUT DATA: 
 """
