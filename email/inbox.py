@@ -5,8 +5,8 @@ import os
 from datetime import datetime
 
 IMAP_SERVER = "imap.gmail.com"
-EMAIL_ADDRESS = ""
-EMAIL_PASSWORD = ""
+EMAIL_ADDRESS = "lelag040804@gmail.com"
+EMAIL_PASSWORD = "ewqd gpvo iwgf flix"
 
 OUTPUT_DIR = r"IncomingEmails"
 
