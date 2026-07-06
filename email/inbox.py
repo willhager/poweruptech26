@@ -4,7 +4,7 @@ from email.header import decode_header
 import os
 from datetime import datetime
 
-IMAP_SERVER = "imap.google.com"
+IMAP_SERVER = "imap.gmail.com"
 EMAIL_ADDRESS = ""
 EMAIL_PASSWORD = ""
 
