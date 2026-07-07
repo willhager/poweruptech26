@@ -9,9 +9,9 @@ from email.utils import parseaddr
 from html import escape
 from pathlib import Path
 
-from config import INCOMING_DIR, PROCESSED_DIR, RESULTS_DIR
-# Reuse the same Gmail account the inbox reader logs in with.
-from src.inbox import EMAIL_ADDRESS, EMAIL_PASSWORD
+# Reuse the same Gmail account the inbox reader logs in with, configured via
+# the .env file (EMAIL_ADDRESS / EMAIL_PASSWORD).
+from config import EMAIL_ADDRESS, EMAIL_PASSWORD, INCOMING_DIR, PROCESSED_DIR, RESULTS_DIR
 
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
@@ -246,6 +246,11 @@ def build_message(result, recipient):
 
 
 def send_message(msg):
+    if not EMAIL_ADDRESS or not EMAIL_PASSWORD:
+        raise SystemExit(
+            "EMAIL_ADDRESS and EMAIL_PASSWORD must be set (see .env). "
+            "Use a Gmail app password, not your account password."
+        )
     with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
         server.starttls()
         server.login(EMAIL_ADDRESS, EMAIL_PASSWORD)

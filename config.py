@@ -35,6 +35,14 @@ PROCESSED_DIR = RUNTIME_DIR / "processed"  # emails already handled
 RESULTS_DIR = RUNTIME_DIR / "results"      # final pipeline output JSON
 DEBUG_DIR = RUNTIME_DIR / "debug"          # raw agent responses for debugging
 
+# --- Email account ----------------------------------------------------------
+# Gmail credentials used both to read the inbox (IMAP) and to send reports
+# (SMTP). Use an app password, not your normal account password. Configure
+# these via the .env file (EMAIL_ADDRESS / EMAIL_PASSWORD) so they aren't
+# hard-coded in the source.
+EMAIL_ADDRESS = os.environ.get("EMAIL_ADDRESS", "")
+EMAIL_PASSWORD = os.environ.get("EMAIL_PASSWORD", "")
+
 # --- Provider ---------------------------------------------------------------
 # Which LLM backend to use. Defaults to Gemini, whose free tier is ideal for
 # testing. Set LLM_PROVIDER=claude (and ANTHROPIC_API_KEY) to switch to Claude

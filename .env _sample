@@ -1,0 +1,21 @@
+LLM_PROVIDER=gemini
+
+GEMINI_API_KEY=A
+
+ANTHROPIC_API_KEY=
+
+# --- Email account (Gmail) ---------------------------------------------------
+# Used to read the inbox (IMAP) and send reports (SMTP). Create a Gmail app
+# password and use it here instead of your normal account password.
+EMAIL_ADDRESS=
+EMAIL_PASSWORD=
+
+# --- Optional overrides ------------------------------------------------------
+# Model defaults are provider-aware (see config.py). Override if you want:
+#   Gemini: gemini-2.5-flash (free tier) / gemini-2.5-pro (stronger, small quota)
+#   Claude: claude-sonnet-5
+# FAST_MODEL=
+# SMART_MODEL=
+
+# Set to 1 for a free, offline dry-run using canned responses (no API calls).
+# MOCK_LLM=1
