@@ -1,14 +1,14 @@
 LLM_PROVIDER=gemini
 
-GEMINI_API_KEY=A
+GEMINI_API_KEY=AIzaSyC--M10UP5r4vg6_W5dZaDhVA4A6rDnYp4
 
 ANTHROPIC_API_KEY=
 
 # --- Email account (Gmail) ---------------------------------------------------
 # Used to read the inbox (IMAP) and send reports (SMTP). Create a Gmail app
 # password and use it here instead of your normal account password.
-EMAIL_ADDRESS=
-EMAIL_PASSWORD=
+EMAIL_ADDRESS=tchbuffalo@gmail.com
+EMAIL_PASSWORD=fecd imcl zhfy qqwf
 
 # --- Optional overrides ------------------------------------------------------
 # Model defaults are provider-aware (see config.py). Override if you want:

@@ -60,7 +60,7 @@ CONSTRAINTS
 - Do not exaggerate claims about the startup's traction, size, or results beyond what's stated 
   in the input paragraph.
 
-LANGUAGE REQUIREMENTS:
+LANGUAGE INSTRUCTIONS:
 Don't reach for the inflated-register vocabulary models overuse: delve, intricate, meticulous, pivotal, crucial, underscore, foster, tapestry, realm, landscape, testament, navigate, showcase, resonate, elevate, compelling, paramount, vibrant. Use the plainer word you'd say out loud ("dug into," not "delved into").
 Vary sentence length deliberately. Mix short punchy sentences with longer ones; avoid a uniform medium-length rhythm.
 Use contractions where natural (it's, don't, you'll). Their near-absence reads as machine-written.
