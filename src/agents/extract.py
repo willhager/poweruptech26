@@ -5,11 +5,11 @@ from pathlib import Path
 from datetime import datetime
 
 from config import FAST_MODEL, AGENT1_MAX_TOKENS, PROMPTS_DIR, DEBUG_DIR
-from ..claude_client import call_claude, extract_json
+from ..llm_client import call_llm, extract_json
 
 PROMPT_FILE = PROMPTS_DIR / "extract.txt"
 
-# Canned output for MOCK_CLAUDE mode so the rest of the pipeline has something
+# Canned output for MOCK_LLM mode so the rest of the pipeline has something
 # realistic to chew on without spending credits.
 _MOCK_PROFILE = json.dumps(
     {
@@ -63,17 +63,15 @@ _MOCK_PROFILE = json.dumps(
 
 
 def _load_system_prompt():
-    """The static instructions (everything before the email placeholder)."""
     template = PROMPT_FILE.read_text(encoding="utf-8")
     return template.split("{{EMAIL_TEXT}}")[0].strip()
 
 
 def process_email(email_file_path):
-    """Extract a structured startup profile (dict) from a saved email file."""
     email_content = Path(email_file_path).read_text(encoding="utf-8")
 
     system_prompt = _load_system_prompt()
-    raw = call_claude(
+    raw = call_llm(
         system_prompt=system_prompt,
         user_content=email_content,
         model=FAST_MODEL,

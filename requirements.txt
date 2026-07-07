@@ -1,1 +1,4 @@
+# Default provider (free tier for testing): LLM_PROVIDER=gemini
+google-genai>=1.0.0
+# Switch back to Claude with LLM_PROVIDER=claude
 anthropic>=0.40.0

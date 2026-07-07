@@ -3,7 +3,7 @@
 import json
 
 from config import FAST_MODEL, AGENT3_MAX_TOKENS, PROMPTS_DIR
-from ..claude_client import call_claude, extract_json
+from ..llm_client import call_llm, extract_json
 
 PROMPT_FILE = PROMPTS_DIR / "draft.txt"
 
@@ -47,7 +47,7 @@ def call_agent_3(startup_paragraph, matches):
         f"TARGET COMPANIES:\n{matches_json}"
     )
 
-    raw = call_claude(
+    raw = call_llm(
         system_prompt=_load_system_prompt(),
         user_content=user_content,
         model=FAST_MODEL,

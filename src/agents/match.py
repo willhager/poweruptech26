@@ -3,11 +3,11 @@
 import json
 
 from config import SMART_MODEL, AGENT2_MAX_TOKENS, PROMPTS_DIR
-from ..claude_client import call_claude, extract_json
+from ..llm_client import call_llm, extract_json
 
 PROMPT_FILE = PROMPTS_DIR / "match.txt"
 
-# Canned matches for MOCK_CLAUDE mode (references real companies from
+# Canned matches for MOCK_LLM mode (references real companies from
 # companies.json so downstream enrichment works).
 _MOCK_MATCHES = json.dumps(
     {
@@ -51,7 +51,7 @@ def call_agent_2(startup_profile, companies):
     startup_json = json.dumps(startup_profile, ensure_ascii=False)
     user_content = f"STARTUP PROFILE:\n{startup_json}"
 
-    raw = call_claude(
+    raw = call_llm(
         system_prompt=cached_system,
         user_content=user_content,
         model=SMART_MODEL,
