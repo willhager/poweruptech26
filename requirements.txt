@@ -2,3 +2,5 @@
 google-genai>=1.0.0
 # Switch back to Claude with LLM_PROVIDER=claude
 anthropic>=0.40.0
+# Loads a project-root .env file (API keys, LLM_PROVIDER, etc.)
+python-dotenv>=1.0.0
