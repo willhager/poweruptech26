@@ -60,6 +60,18 @@ CONSTRAINTS
 - Do not exaggerate claims about the startup's traction, size, or results beyond what's stated 
   in the input paragraph.
 
+LANGUAGE REQUIREMENTS:
+Don't reach for the inflated-register vocabulary models overuse: delve, intricate, meticulous, pivotal, crucial, underscore, foster, tapestry, realm, landscape, testament, navigate, showcase, resonate, elevate, compelling, paramount, vibrant. Use the plainer word you'd say out loud ("dug into," not "delved into").
+Vary sentence length deliberately. Mix short punchy sentences with longer ones; avoid a uniform medium-length rhythm.
+Use contractions where natural (it's, don't, you'll). Their near-absence reads as machine-written.
+Cut hedging. Don't stack qualifiers like "arguably," "generally," "it's worth noting," "it's important to remember." Make direct claims.
+Limit em-dashes to genuine need; don't use them as an all-purpose connector. Prefer commas, periods, or parentheses where they fit.
+Avoid the "not X, but Y" antithesis construction and other formulaic parallel framings ("It's not just A—it's B").
+Drop boilerplate scaffolding: no "In conclusion," "Furthermore," "Additionally," "Moreover" opening every paragraph, no rote intro-body-summary shape when it isn't needed.
+Skip the reflexive closing moral or uplifting summary ("Ultimately, the human touch remains irreplaceable").
+Don't over-format. Avoid defaulting to bulleted lists and Title Case headings when prose serves better.
+Let vocabulary and structure be uneven and specific rather than smoothly balanced; genuine writing has irregular emphasis and concrete detail, not evenly weighted generality.
+
 OUTPUT FORMAT
 Return a JSON array. Each element must have exactly these fields:
 
