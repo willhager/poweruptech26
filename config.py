@@ -12,6 +12,17 @@ from pathlib import Path
 # --- Paths ------------------------------------------------------------------
 PROJECT_ROOT = Path(__file__).resolve().parent
 
+# Load variables from a project-root .env file (e.g. GEMINI_API_KEY,
+# ANTHROPIC_API_KEY, LLM_PROVIDER) so they don't have to be exported by hand.
+# Real environment variables always take precedence over .env values.
+try:
+    from dotenv import load_dotenv
+
+    load_dotenv(PROJECT_ROOT / ".env")
+except ImportError:
+    # python-dotenv is optional; without it, only real env vars are used.
+    pass
+
 DATA_DIR = PROJECT_ROOT / "data"
 COMPANIES_FILE = DATA_DIR / "companies.json"
 
@@ -23,6 +34,14 @@ INCOMING_DIR = RUNTIME_DIR / "incoming"    # emails fetched from Gmail
 PROCESSED_DIR = RUNTIME_DIR / "processed"  # emails already handled
 RESULTS_DIR = RUNTIME_DIR / "results"      # final pipeline output JSON
 DEBUG_DIR = RUNTIME_DIR / "debug"          # raw agent responses for debugging
+
+# --- Email account ----------------------------------------------------------
+# Gmail credentials used both to read the inbox (IMAP) and to send reports
+# (SMTP). Use an app password, not your normal account password. Configure
+# these via the .env file (EMAIL_ADDRESS / EMAIL_PASSWORD) so they aren't
+# hard-coded in the source.
+EMAIL_ADDRESS = os.environ.get("EMAIL_ADDRESS", "")
+EMAIL_PASSWORD = os.environ.get("EMAIL_PASSWORD", "")
 
 # --- Provider ---------------------------------------------------------------
 # Which LLM backend to use. Defaults to Gemini, whose free tier is ideal for
@@ -50,9 +69,14 @@ FAST_MODEL = os.environ.get("FAST_MODEL", _defaults["fast"])    # extraction + d
 SMART_MODEL = os.environ.get("SMART_MODEL", _defaults["smart"])  # matching / reasoning
 
 # --- Output token ceilings (output tokens dominate cost) --------------------
-AGENT1_MAX_TOKENS = int(os.environ.get("AGENT1_MAX_TOKENS", "1500"))  # profile JSON
-AGENT2_MAX_TOKENS = int(os.environ.get("AGENT2_MAX_TOKENS", "1200"))  # matches + reasoning
-AGENT3_MAX_TOKENS = int(os.environ.get("AGENT3_MAX_TOKENS", "1600"))  # up to 3 drafts
+# These must be large enough to hold the FULL JSON answer — if the model runs
+# out of budget mid-object, the truncated JSON fails to parse. Agent 1's
+# profile schema in particular is big, and Gemini is more verbose than Claude,
+# so the ceilings are generous. Lower them via env var to cap spend once you
+# know your typical output sizes.
+AGENT1_MAX_TOKENS = int(os.environ.get("AGENT1_MAX_TOKENS", "4096"))  # profile JSON
+AGENT2_MAX_TOKENS = int(os.environ.get("AGENT2_MAX_TOKENS", "4096"))  # matches + reasoning
+AGENT3_MAX_TOKENS = int(os.environ.get("AGENT3_MAX_TOKENS", "4096"))  # up to 3 drafts
 
 # --- Free dry-run mode ------------------------------------------------------
 # Set MOCK_LLM=1 to run the ENTIRE pipeline end-to-end using canned responses

@@ -59,9 +59,29 @@ def _call_gemini(system_prompt, user_content, model, max_tokens):
         config=types.GenerateContentConfig(
             system_instruction=system_prompt,
             max_output_tokens=max_tokens,
+            # All three agents expect a raw JSON value back. Asking for the
+            # JSON mime type keeps Gemini from wrapping the answer in prose or
+            # ```json fences, so the output is more compact (fits the token
+            # budget) and reliably parseable.
+            response_mime_type="application/json",
+            # Gemini 2.5 models "think" by default, and those hidden tokens
+            # count against max_output_tokens — starving (and truncating) the
+            # actual JSON answer. These agents want structured output, not
+            # chain-of-thought, so disable thinking to spend the whole budget
+            # on the response. (Supported on 2.5-flash; 2.5-pro has a minimum
+            # thinking budget and will ignore a 0 here.)
+            thinking_config=types.ThinkingConfig(thinking_budget=0),
         ),
     )
-    return response.text
+    text = response.text
+    if not text:
+        # Usually finish_reason=MAX_TOKENS (raise the AGENT*_MAX_TOKENS budget)
+        # or a safety block. Surface it clearly instead of returning None.
+        finish = None
+        if response.candidates:
+            finish = getattr(response.candidates[0], "finish_reason", None)
+        raise ValueError(f"Gemini returned no text (finish_reason={finish}).")
+    return text
 
 
 def _call_claude(system_prompt, user_content, model, max_tokens):

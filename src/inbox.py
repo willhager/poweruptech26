@@ -4,11 +4,9 @@ from email.header import decode_header
 import os
 from datetime import datetime
 
-from config import INCOMING_DIR
+from config import INCOMING_DIR, EMAIL_ADDRESS, EMAIL_PASSWORD
 
 IMAP_SERVER = "imap.gmail.com"
-EMAIL_ADDRESS = "tchbuffalo@gmail.com"
-EMAIL_PASSWORD = "fecd imcl zhfy qqwf"
 
 
 def decode_email_header(value):
