@@ -1,132 +1,262 @@
 [
   {
-    "company": "Northbridge Analytics",
+    "company": "Lakeview Manufacturing Group",
     "contact_personnel": [
       {
-        "name": "Elena Marquez",
-        "role": "Director of Data Strategy",
-        "email": "emarquez@northbridge.io",
-        "phone": "555-214-9832"
+        "name": "Sarah Whitcomb",
+        "role": "Director of Strategic Partnerships",
+        "email": "swhitcomb@lakeviewmfg.com",
+        "phone": "716-442-1183"
       }
     ],
-    "mission_statement": "Northbridge Analytics empowers organizations to make confident decisions through precise, transparent, and ethically-driven data intelligence.",
-    "business_type": "Enterprise data analytics and machine learning consulting firm."
+    "mission_statement": "Lakeview Manufacturing Group supports regional growth by producing high‑quality industrial components with a focus on reliability and continuous improvement.",
+    "business_type": "Industrial component manufacturing"
   },
   {
-    "company": "Harborline Logistics",
+    "company": "Buffalo Heritage Foods",
     "contact_personnel": [
       {
-        "name": "Marcus O’Donnell",
-        "role": "VP of Operations",
-        "email": "modonnell@harborline.com",
-        "phone": "555-882-4410"
+        "name": "Anthony DeMarco",
+        "role": "Business Development Manager",
+        "email": "ademarco@buffaloheritagefoods.com",
+        "phone": "716-555-9034"
       }
     ],
-    "mission_statement": "Harborline Logistics is committed to delivering reliable, efficient, and sustainable supply chain solutions across global markets.",
-    "business_type": "International freight, warehousing, and transportation services provider."
+    "mission_statement": "Buffalo Heritage Foods celebrates Western New York’s culinary traditions through sustainable production and community‑focused distribution.",
+    "business_type": "Food production and regional distribution"
   },
   {
-    "company": "Silverpine Therapeutics",
+    "company": "Rochester TechWorks",
     "contact_personnel": [
       {
-        "name": "Dr. Priya Nand",
-        "role": "Chief Medical Officer",
-        "email": "pnand@silverpinehealth.org",
-        "phone": "555-330-7721"
+        "name": "Lena Caruso",
+        "role": "Innovation Partnerships Lead",
+        "email": "lcaruso@rochestertechworks.com",
+        "phone": "585-771-2201"
       }
     ],
-    "mission_statement": "Silverpine Therapeutics advances patient well-being through innovative treatments, compassionate care, and scientific excellence.",
-    "business_type": "Biopharmaceutical research and clinical development organization."
+    "mission_statement": "Rochester TechWorks accelerates digital transformation for businesses across Upstate New York through accessible technology solutions.",
+    "business_type": "Technology consulting and digital modernization"
   },
   {
-    "company": "Brightforge Studios",
+    "company": "Niagara Renewable Systems",
     "contact_personnel": [
       {
-        "name": "Caleb Rios",
-        "role": "Creative Director",
-        "email": "c.rios@brightforge.studio",
-        "phone": "555-991-2044"
+        "name": "Michael Harrington",
+        "role": "Community & Vendor Relations Manager",
+        "email": "mharrington@niagararenewables.com",
+        "phone": "716-380-4412"
       }
     ],
-    "mission_statement": "Brightforge Studios creates immersive digital experiences that inspire imagination and elevate interactive storytelling.",
-    "business_type": "Independent game development and digital media production studio."
+    "mission_statement": "Niagara Renewable Systems advances clean energy adoption across Western New York through reliable, scalable renewable infrastructure.",
+    "business_type": "Renewable energy infrastructure and consulting"
   },
   {
-    "company": "Evercrest Financial",
+    "company": "Queen City Health Network",
     "contact_personnel": [
       {
-        "name": "Danielle Harper",
-        "role": "Senior Portfolio Manager",
-        "email": "dharper@evercrestfin.com",
-        "phone": "555-762-1189"
+        "name": "Dr. Renee Walters",
+        "role": "Director of Clinical Partnerships",
+        "email": "rwalters@qchealthnetwork.org",
+        "phone": "716-602-9931"
       }
     ],
-    "mission_statement": "Evercrest Financial helps clients build long-term stability through disciplined investment strategies and transparent financial guidance.",
-    "business_type": "Investment management and financial advisory firm."
+    "mission_statement": "Queen City Health Network strengthens community wellness by connecting patients with accessible, high‑quality healthcare resources.",
+    "business_type": "Healthcare services organization"
   },
   {
-    "company": "Greenwave Hydraulics",
+    "company": "Frontier Industrial Automation",
     "contact_personnel": [
       {
-        "name": "Tobias Grant",
-        "role": "Lead Systems Engineer",
-        "email": "tgrant@greenwavehydro.com",
-        "phone": "555-447-9033"
+        "name": "Jacob Stein",
+        "role": "Head of Vendor Integration",
+        "email": "jstein@frontierautomation.com",
+        "phone": "716-884-5520"
       }
     ],
-    "mission_statement": "Greenwave Hydraulics designs sustainable fluid-power systems that enhance industrial efficiency while reducing environmental impact.",
-    "business_type": "Industrial hydraulic systems engineering and manufacturing company."
+    "mission_statement": "Frontier Industrial Automation enhances manufacturing efficiency through intelligent robotics and automation solutions.",
+    "business_type": "Industrial automation and robotics engineering"
   },
   {
-    "company": "Skyline Urban Design",
+    "company": "Buffalo River Creative Agency",
     "contact_personnel": [
       {
-        "name": "Renee Caldwell",
-        "role": "Principal Architect",
-        "email": "rcaldwell@skylineud.com",
-        "phone": "555-600-4412"
+        "name": "Maya Ellington",
+        "role": "Client Engagement Director",
+        "email": "mellington@buffalorivercreative.com",
+        "phone": "716-299-4410"
       }
     ],
-    "mission_statement": "Skyline Urban Design shapes modern communities through thoughtful architecture, inclusive planning, and resilient infrastructure.",
-    "business_type": "Architecture and urban planning consultancy."
+    "mission_statement": "Buffalo River Creative Agency helps regional brands grow through strategic storytelling and modern digital design.",
+    "business_type": "Marketing, branding, and digital creative services"
   },
   {
-    "company": "Bluehaven Cyber Defense",
+    "company": "Genesee Valley Agritech",
     "contact_personnel": [
       {
-        "name": "Jamal Winters",
-        "role": "Chief Security Analyst",
-        "email": "jwinters@bluehavencyber.com",
-        "phone": "555-774-2209"
+        "name": "Tom Reyes",
+        "role": "Agritech Partnership Coordinator",
+        "email": "treyes@gvagritech.com",
+        "phone": "585-440-7719"
       }
     ],
-    "mission_statement": "Bluehaven Cyber Defense protects organizations from emerging digital threats through proactive monitoring and advanced security engineering.",
-    "business_type": "Cybersecurity operations and threat intelligence provider."
+    "mission_statement": "Genesee Valley Agritech supports farmers with innovative tools that improve crop yield, sustainability, and operational efficiency.",
+    "business_type": "Agricultural technology and farm operations support"
   },
   {
-    "company": "Oakridge Learning Systems",
+    "company": "Buffalo Metro Transit Solutions",
     "contact_personnel": [
       {
-        "name": "Melissa Tran",
-        "role": "Head of Curriculum Innovation",
-        "email": "mtran@oakridgelearn.org",
-        "phone": "555-913-5520"
+        "name": "Kendra Lawson",
+        "role": "Public & Vendor Outreach Manager",
+        "email": "klawson@bmtstransit.com",
+        "phone": "716-555-8844"
       }
     ],
-    "mission_statement": "Oakridge Learning Systems develops accessible educational tools that empower learners of all ages to grow, explore, and succeed.",
-    "business_type": "Educational software and digital curriculum development company."
+    "mission_statement": "Buffalo Metro Transit Solutions enhances regional mobility through modern transit planning and community‑driven transportation initiatives.",
+    "business_type": "Transit planning and transportation consulting"
   },
   {
-    "company": "Ironcrest Fabrication",
+    "company": "Highland Data Security",
     "contact_personnel": [
       {
-        "name": "Gavin Holt",
-        "role": "Manufacturing Supervisor",
-        "email": "gholt@ironcrestfab.com",
-        "phone": "555-288-7714"
+        "name": "Evan Marshall",
+        "role": "Director of Enterprise Security Partnerships",
+        "email": "emarshall@highlandsecurity.com",
+        "phone": "585-221-3300"
       }
     ],
-    "mission_statement": "Ironcrest Fabrication delivers precision-built components through craftsmanship, innovation, and uncompromising quality standards.",
-    "business_type": "Custom metal fabrication and industrial component manufacturing."
+    "mission_statement": "Highland Data Security protects Western New York organizations by delivering proactive cybersecurity solutions tailored to regional business needs.",
+    "business_type": "Cybersecurity consulting and managed security services"
+  },
+  {
+    "company": "Buffalo Precision Plastics",
+    "contact_personnel": [
+      {
+        "name": "Laura Kensington",
+        "role": "Partnership Development Manager",
+        "email": "lkensington@buffaloprecision.com",
+        "phone": "716-441-2290"
+      }
+    ],
+    "mission_statement": "Buffalo Precision Plastics delivers high‑quality molded components that support manufacturing growth across Western New York.",
+    "business_type": "Industrial component manufacturing"
+  },
+  {
+    "company": "Rochester Community Wellness Alliance",
+    "contact_personnel": [
+      {
+        "name": "Dr. Samuel Ortega",
+        "role": "Director of Community Health Partnerships",
+        "email": "sortega@rcwellness.org",
+        "phone": "585-300-7712"
+      }
+    ],
+    "mission_statement": "Rochester Community Wellness Alliance strengthens regional health outcomes through accessible care and collaborative outreach.",
+    "business_type": "Healthcare services organization"
+  },
+  {
+    "company": "Niagara Frontier Robotics",
+    "contact_personnel": [
+      {
+        "name": "Holly Brennan",
+        "role": "Innovation & Vendor Integration Lead",
+        "email": "hbrennan@nfrontierrobotics.com",
+        "phone": "716-552-8841"
+      }
+    ],
+    "mission_statement": "Niagara Frontier Robotics builds intelligent automation systems that help regional manufacturers scale efficiently.",
+    "business_type": "Industrial automation and robotics engineering"
+  },
+  {
+    "company": "Empire State Food Co‑Packing",
+    "contact_personnel": [
+      {
+        "name": "Victor Salerno",
+        "role": "Commercial Partnerships Coordinator",
+        "email": "vsalerno@empirecofoods.com",
+        "phone": "716-990-4418"
+      }
+    ],
+    "mission_statement": "Empire State Food Co‑Packing supports local brands by providing reliable, scalable food production and packaging services.",
+    "business_type": "Food production and regional distribution"
+  },
+  {
+    "company": "Buffalo Digital Infrastructure Group",
+    "contact_personnel": [
+      {
+        "name": "Nina Patel",
+        "role": "Director of Technology Partnerships",
+        "email": "npatel@bdigroup.com",
+        "phone": "716-221-5503"
+      }
+    ],
+    "mission_statement": "Buffalo Digital Infrastructure Group enhances regional connectivity through modern network solutions and secure digital frameworks.",
+    "business_type": "Technology consulting and digital modernization"
+  },
+  {
+    "company": "Genesee Valley Renewable Transport",
+    "contact_personnel": [
+      {
+        "name": "Owen McCarthy",
+        "role": "Public & Vendor Engagement Manager",
+        "email": "omccarthy@gvrenewtransport.com",
+        "phone": "585-440-9933"
+      }
+    ],
+    "mission_statement": "Genesee Valley Renewable Transport advances sustainable mobility through innovative transportation planning and clean‑energy transit solutions.",
+    "business_type": "Transit planning and transportation consulting"
+  },
+  {
+    "company": "Southern Tier Cyber Systems",
+    "contact_personnel": [
+      {
+        "name": "Jillian Rhodes",
+        "role": "Enterprise Security Partnerships Lead",
+        "email": "jrhodes@stcybersystems.com",
+        "phone": "607-221-4410"
+      }
+    ],
+    "mission_statement": "Southern Tier Cyber Systems protects regional organizations with proactive cybersecurity solutions tailored to evolving digital threats.",
+    "business_type": "Cybersecurity consulting and managed security services"
+  },
+  {
+    "company": "Buffalo Industrial Supply Cooperative",
+    "contact_personnel": [
+      {
+        "name": "Derrick Vaughn",
+        "role": "Vendor Relations Supervisor",
+        "email": "dvaughn@buffaloisc.com",
+        "phone": "716-552-3301"
+      }
+    ],
+    "mission_statement": "Buffalo Industrial Supply Cooperative strengthens regional manufacturing by connecting businesses with reliable industrial materials and equipment.",
+    "business_type": "Industrial supply and regional distribution"
+  },
+  {
+    "company": "Rochester Creative Media Lab",
+    "contact_personnel": [
+      {
+        "name": "Tara Livingston",
+        "role": "Client Strategy & Partnerships Director",
+        "email": "tlivingston@rcmedialab.com",
+        "phone": "585-771-5522"
+      }
+    ],
+    "mission_statement": "Rochester Creative Media Lab empowers brands through innovative storytelling, digital design, and modern marketing solutions.",
+    "business_type": "Marketing, branding, and digital creative services"
+  },
+  {
+    "company": "Buffalo Agritech Cooperative",
+    "contact_personnel": [
+      {
+        "name": "Henry Dalton",
+        "role": "Agritech Vendor Partnerships Manager",
+        "email": "hdalton@buffaloagritechcoop.com",
+        "phone": "716-884-7710"
+      }
+    ],
+    "mission_statement": "Buffalo Agritech Cooperative supports regional farmers with advanced tools that improve sustainability, yield, and operational efficiency.",
+    "business_type": "Agricultural technology and farm operations support"
   }
 ]
