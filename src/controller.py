@@ -21,6 +21,8 @@ from .agents.match import call_agent_2
 from .agents.draft import call_agent_3, build_startup_paragraph
 from datetime import datetime
 
+from send_report import build_message, resolve_recipient, send_message
+
 
 def load_companies():
     return json.loads(COMPANIES_FILE.read_text(encoding="utf-8"))
@@ -98,7 +100,25 @@ def archive_email(email_path):
     shutil.move(str(email_path), str(PROCESSED_DIR / email_path.name))
 
 
-def main(fetch=True):
+def send_report_email(result):
+    """Email the formatted match report back to the original sender.
+
+    Failures here are logged but not raised, so a send problem never loses the
+    results we already computed and saved.
+    """
+    try:
+        recipient = resolve_recipient(result)
+        if not recipient:
+            print("Report not sent: could not determine a recipient.")
+            return
+        msg = build_message(result, recipient)
+        send_message(msg)
+        print(f"Report email -> sent to {recipient}")
+    except Exception as exc:
+        print(f"Report email FAILED: {exc}")
+
+
+def main(fetch=True, send=True):
     if fetch:
         ReadEmailInbox()
 
@@ -115,6 +135,10 @@ def main(fetch=True):
         try:
             result = run_pipeline_on_email(email_path, companies, contact_lookup)
             save_result(result)
+            if send:
+                # Send before archiving so the source email's From header is
+                # still resolvable (resolve_recipient also checks processed/).
+                send_report_email(result)
             archive_email(email_path)
         except Exception as exc:  # keep processing remaining emails
             print(f"ERROR processing {email_path.name}: {exc}")
